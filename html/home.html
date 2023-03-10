@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 3</title>
+</head>
+<body>
+
+    <header id="cabezalFormulario">
+        <h3>
+           Workshop 3 
+        </h3>
+    </header>
+    <main id="formularioGeneral">
+
+        <form id="formularioPreguntas">
+            <h2 class="tituloPregunta">Ingresa el nombre del producto</h2>
+            <input type="text" placeholder="Nombre del producto">
+
+            <br>
+
+            <h2 class="tituloPregunta">Ingresa el precio del producto</h2>
+            <input type="number" placeholder="Precio del producto">
+
+            <br>
+
+            <h2 class="tituloPregunta">Ingresa la cantidad del producto</h2>
+            <input type="number" placeholder="Cantidad del producto">
+
+            <br>
+
+            <h2 class="tituloPregunta">Elige la categoría del producto</h2>
+            <label>
+                <input type="radio">
+                Ropa y/o accesorios de vestimenta
+            </label>
+            <br>
+            <label>
+                <input type="radio">
+                Comida y/o elementos de cocina
+            </label>
+            <br>
+            <label>
+                <input type="radio">
+                Arte y/o elementos de papelería
+            </label>
+            <br>
+            <br>
+            <br>
+            <button id="btnEnviar">
+                Enviar
+            </button>
+        </form>
+
+        <table id="tablaDeRespuestas">
+            <tr id="titulosRespuestas">
+                <th>Nombre del producto</th>
+                <th>Precio del producto</th>
+                <th>Cantidad del producto</th>
+                <th>Categoría del producto</th>
+                <th>Opciones para el producto</th>
+            </tr>
+            <tr id="respuestas">
+                <td>nombre</td>
+                <td>precio</td>
+                <td>cantidad</td>
+                <td>categoría</td>
+                <td id="respuestasBotones">
+                    <button id="btnEliminar">Eliminar</button>
+                    <button id="btnEditar">Actualizar</button>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
